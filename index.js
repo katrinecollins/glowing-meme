@@ -72,8 +72,7 @@ function appMenu() {
                 }
             }
         ]).then(answers => {
-
-            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answer.managerOfficeNumber);
+            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             teamMembers.push(manager);
             idArray.push(answers.managerId);
             createTeam();
